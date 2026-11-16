@@ -30,7 +30,7 @@ Pushing to `main` deploys the site through GitHub Actions (`.github/workflows/pa
 Everything was restored from the Wayback Machine captures of grandeshokai.com, taken between 2018 and 2022.
 
 - **Company facts:** address, officers and capital are as published in 2018.
-- **Contact email:** the archived site used a form and did not show an email address, so `info@grandeshokai.com` in `content/site.json` must be confirmed before launch.
+- **Contact email:** `info@grandeshokai.com` (confirmed by the owner, 16 Nov 2026).
 - **Product claims:** the archive's medical claims (for example "prevents cancer", "treats malaria" or "lowers cholesterol") were left out to stay within Japan's 薬機法 and 景品表示法. Specifications, origins and applications were kept.
 - **Senna:** it is labelled as a pharmaceutical raw material. In Japan, senna leaves and pods count as 医薬品成分 (pharmaceutical ingredients).
 - **Brand logos:** partner and brand logos are not used. Brand names appear as plain text.
