@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.consulting %}{% set head_img = "" %}
+{% include "_pagehead.html" %}
+<section class="section section-flush">
+  <div class="wrap two-col two-col-wide">
+    <div>
+      <p class="eyebrow">01</p>
+      <h2 class="h2">{{ P.japan_heading }}</h2>
+      <p class="lead-sm">{{ P.japan_text }}</p>
+    </div>
+    <div>
+      <ul class="pills">{% for s in P.sectors %}<li>{{ s }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+<section class="section section-dark">
+  <div class="wrap">
+    <header class="section-head"><h2 class="h2">{{ P.services_heading }}</h2></header>
+    <ol class="service-grid">{% for s in P.services %}<li class="reveal"><span>{{ "%02d"|format(loop.index) }}</span>{{ s }}</li>{% endfor %}</ol>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap two-col two-col-wide">
+    <div><p class="eyebrow">02</p><h2 class="h2">{{ P.global_heading }}</h2></div>
+    <div class="prose">{% for p in P.global_text %}<p>{{ p }}</p>{% endfor %}
+      <h3 class="sheet-h">{{ P.partners_heading }}</h3>
+      <ul class="pills pills-quiet">{% for p in P.partners %}<li>{{ p }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}

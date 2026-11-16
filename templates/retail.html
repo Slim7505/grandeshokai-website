@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.retail %}{% set head_img = "makfa" %}
+{% include "_pagehead.html" %}
+<section class="section">
+  <div class="wrap">
+    <header class="section-head"><h2 class="h2">{{ P.brands_heading }}</h2></header>
+    <ul class="brands">
+      {% for b in P.brands %}
+      <li class="brand-card reveal"><span class="brand-origin">{{ b.origin }}</span><h3 class="brand-wordmark">{{ b.name }}</h3><p>{{ b.text }}</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="section section-sand">
+  <div class="wrap">
+    <header class="section-head"><h2 class="h2">{{ P.lines_heading }}</h2></header>
+    <div class="catalogue">
+      {% for c in P.lines %}
+      <div class="cat reveal"><h3 class="cat-name">{{ c.cat }}</h3><ul>{% for i in c["items"] %}<li>{{ i }}</li>{% endfor %}</ul></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap callout reveal">
+    <div><h2 class="h2">{{ P.distributor_heading }}</h2><p>{{ P.distributor_text }}</p></div>
+    <a class="btn btn-saffron" href="{{ path('contact') }}?topic=1">{{ P.distributor_cta }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+  </div>
+</section>
+{% endblock %}

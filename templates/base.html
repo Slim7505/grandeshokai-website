@@ -1,0 +1,114 @@
+{% import "_macros.html" as m with context %}
+{% set pm = t.meta.pages[slug] %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ pm.title }}</title>
+<meta name="description" content="{{ pm.description }}">
+<link rel="canonical" href="{{ canonical }}">
+{% for l in langs %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ alt[l] }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ alt[langs[0]] }}">
+<meta name="theme-color" content="#1d1712">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ t.meta.site_name }}">
+<meta property="og:title" content="{{ pm.title }}">
+<meta property="og:description" content="{{ pm.description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ base_url }}/assets/img/og-image.jpg">
+<meta property="og:locale" content="{{ site.og_locale[lang] }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ root }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{% if lang == "ja" %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+{% else %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+{% endif %}
+<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": t.company.name,
+  "alternateName": ["Grande Shokai Co., Ltd.", "グランデ商会株式会社"],
+  "url": base_url ~ "/",
+  "email": site.email,
+  "telephone": site.tel,
+  "faxNumber": site.fax,
+  "foundingDate": site.founded,
+  "address": {"@type": "PostalAddress", "postalCode": site.postal_code, "addressCountry": "JP", "streetAddress": t.company.address}
+} | tojson }}
+</script>
+</head>
+<body class="page-{{ slug }}">
+<a class="skip" href="#main">{{ t.ui.skip }}</a>
+<header class="site-header{% if slug == 'home' %} on-dark{% endif %}" data-header>
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ path('home') }}" aria-label="{{ t.meta.site_name }} — {{ t.ui.nav.home }}">
+      {{ m.mark("mark") }}
+      <span class="brand-text"><span class="brand-name">GRANDE SHOKAI</span><span class="brand-sub">{{ "グランデ商会株式会社" if lang == "ja" else "Your worldwide product" }}</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main" data-nav>
+      <ul class="nav-list">
+        {% for s in site.nav %}{% if s != "home" %}
+        <li><a href="{{ path(s) }}"{% if s == slug %} aria-current="page"{% endif %}>{{ t.ui.nav[s] }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+      <div class="lang" role="group" aria-label="{{ t.ui.language }}">
+        {% for l in langs %}<a href="{{ lang_href[l] }}" hreflang="{{ l }}" lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}>{{ site.lang_short[l] }}</a>{% endfor %}
+      </div>
+      <a class="btn btn-saffron btn-sm nav-cta" href="{{ path('contact') }}">{{ t.ui.cta_quote }}</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu>
+      <span class="menu-open">{{ m.icon("menu") }}<span class="sr">{{ t.ui.menu }}</span></span>
+      <span class="menu-close">{{ m.icon("close") }}<span class="sr">{{ t.ui.close }}</span></span>
+    </button>
+  </div>
+</header>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <p class="footer-big">{{ t.ui.footer_tagline }}</p>
+    <a class="btn btn-saffron" href="{{ path('contact') }}">{{ t.ui.cta_contact }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+  </div>
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand brand-invert" href="{{ path('home') }}">{{ m.mark("mark") }}<span class="brand-text"><span class="brand-name">GRANDE SHOKAI</span><span class="brand-sub">{{ t.company.name }}</span></span></a>
+    </div>
+    <div>
+      <h2 class="footer-h">{{ t.ui.footer_company }}</h2>
+      <address class="footer-address">
+        <p>{{ t.company.address }}</p>
+        <p><span class="nowrap">{{ t.ui.tel }} <a href="tel:{{ site.tel }}">{{ site.tel_local if lang == "ja" else site.tel }}</a></span> · <span class="nowrap">{{ t.ui.fax }} {{ site.fax_local if lang == "ja" else site.fax }}</span></p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>{{ t.company.hours }}</p>
+      </address>
+    </div>
+    <div>
+      <h2 class="footer-h">{{ t.ui.footer_explore }}</h2>
+      <ul class="footer-links">
+        {% for s in site.pages %}<li><a href="{{ path(s) }}">{{ t.ui.nav[s] }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-h">{{ t.ui.language }}</h2>
+      <ul class="footer-links">
+        {% for l in langs %}<li><a href="{{ lang_href[l] }}" hreflang="{{ l }}" lang="{{ l }}"{% if l == lang %} aria-current="true"{% endif %}>{{ site.lang_label[l] }}</a></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© 2016–{{ year }} {{ t.company.name }} {{ t.ui.rights }}</p>
+    <a href="#main">{{ t.ui.back_top }} ↑</a>
+  </div>
+</footer>
+<script src="{{ root }}assets/js/site.js" defer></script>
+</body>
+</html>

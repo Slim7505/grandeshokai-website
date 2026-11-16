@@ -1,0 +1,5 @@
+<ol class="network">
+  {% for n in t.network %}
+  <li class="reveal"><span class="network-idx">{{ "%02d"|format(loop.index) }}</span><h3 class="network-country">{{ n.country }}</h3><p>{{ n.partners|join(" · ") }}</p></li>
+  {% endfor %}
+</ol>

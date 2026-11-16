@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.about %}{% set head_img = "hibiscus" %}
+{% include "_pagehead.html" %}
+<section class="section">
+  <div class="wrap two-col">
+    <div class="prose">{% for p in P.story %}<p>{{ p }}</p>{% endfor %}</div>
+    <dl class="mini-stats">{% for s in t.home.stats %}<div><dd>{{ s.num }}</dd><dt>{{ s.label }}</dt></div>{% endfor %}</dl>
+  </div>
+</section>
+<section class="section section-sand">
+  <div class="wrap">
+    <header class="section-head"><h2 class="h2">{{ P.values_heading }}</h2></header>
+    <ol class="values">
+      {% for v in P["values"] %}
+      <li class="reveal"><span class="value-num">{{ "%02d"|format(loop.index) }}</span><h3 class="h3">{{ v.title }}</h3><p>{{ v.text }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+<section class="section" id="profile">
+  <div class="wrap two-col two-col-wide">
+    <h2 class="h2">{{ P.profile_heading }}</h2>
+    <div>
+      <dl class="spec spec-lg">
+        {% for r in P.profile %}<div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>{% endfor %}
+      </dl>
+      <p><a class="link-arrow" href="{{ site.map }}" rel="noopener" target="_blank">{{ m.icon("pin", "ico ico-sm") }} {{ t.ui.map }}</a></p>
+    </div>
+  </div>
+</section>
+<section class="section section-dark">
+  <div class="wrap">
+    <header class="section-head"><h2 class="h2">{{ P.network_heading }}</h2></header>
+    {% include "_network.html" %}
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}

@@ -1,0 +1,83 @@
+{
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "pages": [
+    "home",
+    "about",
+    "wholesale",
+    "retail",
+    "consulting",
+    "contact",
+    "privacy"
+  ],
+  "nav": [
+    "home",
+    "about",
+    "wholesale",
+    "retail",
+    "consulting",
+    "contact"
+  ],
+  "base_url": "https://grandeshokai.com",
+  "cname": "grandeshokai.com",
+  "email": "info@grandeshokai.com",
+  "tel": "+81-44-272-8577",
+  "tel_local": "044-272-8577",
+  "fax": "+81-44-272-8759",
+  "fax_local": "044-272-8759",
+  "postal_code": "210-0805",
+  "founded": "2016",
+  "map": "https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%B7%9D%E5%B4%8E%E5%8C%BA%E4%BC%8A%E5%8B%A2%E7%94%BA13-5",
+  "lang_label": {
+    "ja": "日本語",
+    "en": "English"
+  },
+  "lang_short": {
+    "ja": "JA",
+    "en": "EN"
+  },
+  "og_locale": {
+    "ja": "ja_JP",
+    "en": "en_US"
+  },
+  "images": {
+    "baobab": [
+      1050,
+      350
+    ],
+    "dates": [
+      1050,
+      350
+    ],
+    "foodex-2018": [
+      1050,
+      350
+    ],
+    "gum-arabic": [
+      1050,
+      350
+    ],
+    "hibiscus": [
+      1050,
+      350
+    ],
+    "makfa": [
+      1050,
+      350
+    ],
+    "senna": [
+      1050,
+      350
+    ],
+    "sesame": [
+      1050,
+      350
+    ],
+    "smts-2019": [
+      1500,
+      500
+    ]
+  }
+}

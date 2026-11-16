@@ -1,0 +1,13 @@
+<section class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ path('home') }}">{{ t.ui.nav.home }}</a><span aria-hidden="true">/</span><span>{{ t.ui.nav[slug] }}</span></nav>
+    <div class="page-head-grid">
+      <div>
+        <p class="eyebrow">{{ P.eyebrow }}</p>
+        <h1 class="display display-md">{{ P.heading }}</h1>
+      </div>
+      {% if P.lead is defined %}<p class="lead">{{ P.lead }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+{% if head_img %}{% import "_macros.html" as m with context %}<div class="band band-head">{{ m.img(head_img, "", "cover", "eager") }}</div>{% endif %}

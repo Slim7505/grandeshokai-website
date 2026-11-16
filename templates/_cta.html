@@ -1,0 +1,13 @@
+{% import "_macros.html" as m with context %}
+<section class="cta">
+  <div class="wrap cta-inner">
+    <div>
+      <h2 class="h2">{{ t.home.cta_heading }}</h2>
+      <p>{{ t.home.cta_text }}</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-saffron" href="{{ path('contact') }}">{{ t.ui.cta_quote }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+      <a class="btn btn-line-light" href="{{ path('contact') }}?topic=2">{{ t.home.cta_supplier }}</a>
+    </div>
+  </div>
+</section>

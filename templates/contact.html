@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.contact %}{% set head_img = "" %}
+{% include "_pagehead.html" %}
+<section class="section section-flush">
+  <div class="wrap contact-grid">
+    <form class="form" data-mailto="{{ site.email }}" data-subject="{{ P.subject_prefix }}" novalidate>
+      <h2 class="h3">{{ P.form_heading }}</h2>
+      <fieldset class="topics">
+        <legend>{{ P.topic }} <span class="req">{{ P.required }}</span></legend>
+        {% for tp in P.topics %}<label class="chip"><input type="radio" name="topic" value="{{ tp }}"{% if loop.first %} checked{% endif %} data-i="{{ loop.index0 }}"><span>{{ tp }}</span></label>{% endfor %}
+      </fieldset>
+      <div class="field-row">
+        <label class="field"><span>{{ P.name }} <span class="req">{{ P.required }}</span></span><input name="name" autocomplete="name" required></label>
+        <label class="field"><span>{{ P.company }}</span><input name="company" autocomplete="organization"></label>
+      </div>
+      <div class="field-row">
+        <label class="field"><span>{{ P.email }} <span class="req">{{ P.required }}</span></span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="field"><span>{{ P.phone }}</span><input name="phone" type="tel" autocomplete="tel"></label>
+      </div>
+      <label class="field"><span>{{ P.product }}</span><input name="product"></label>
+      <label class="field"><span>{{ P.message }} <span class="req">{{ P.required }}</span></span><textarea name="message" rows="6" required></textarea></label>
+      <p class="form-error" role="alert" hidden>{{ P.error }}</p>
+      <button class="btn btn-dark" type="submit">{{ m.icon("mail", "ico ico-sm") }} {{ P.submit }}</button>
+      <p class="small muted">{{ P.form_note }}</p>
+      <input type="hidden" name="l_name" value="{{ P.name }}"><input type="hidden" name="l_company" value="{{ P.company }}"><input type="hidden" name="l_email" value="{{ P.email }}"><input type="hidden" name="l_phone" value="{{ P.phone }}"><input type="hidden" name="l_topic" value="{{ P.topic }}"><input type="hidden" name="l_product" value="{{ P.product }}">
+    </form>
+    <aside class="contact-side">
+      <div class="contact-card">
+        <h2 class="h3">{{ P.direct_heading }}</h2>
+        <dl class="spec">
+          <div><dt>{{ t.ui.email }}</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+          <div><dt>{{ t.ui.tel }}</dt><dd><a href="tel:{{ site.tel }}">{{ site.tel_local if lang == "ja" else site.tel }}</a></dd></div>
+          <div><dt>{{ t.ui.fax }}</dt><dd>{{ site.fax_local if lang == "ja" else site.fax }}</dd></div>
+          <div><dt>{{ t.ui.hours }}</dt><dd>{{ t.company.hours }}</dd></div>
+          <div><dt>{{ t.ui.address }}</dt><dd>{{ t.company.address }} <a href="{{ site.map }}" rel="noopener" target="_blank">{{ t.ui.map }} ↗</a></dd></div>
+        </dl>
+      </div>
+      <div class="contact-note">
+        <h2 class="h4">{{ P.supplier_heading }}</h2>
+        <p>{{ P.supplier_text }}</p>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

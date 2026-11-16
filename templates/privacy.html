@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{% set P = t.privacy %}{% set head_img = "" %}
+{% include "_pagehead.html" %}
+<section class="section section-flush">
+  <div class="wrap prose prose-narrow">
+    {% for p in P.intro %}<p>{{ p }}</p>{% endfor %}
+    {% for s in P.sections %}
+    <h2 class="h3">{{ s.title }}</h2>
+    {% for b in s.body %}<p>{{ b }}</p>{% endfor %}
+    {% if s.list is defined %}<ul class="dash">{% for li in s.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
+    {% endfor %}
+    <h2 class="h3">{{ P.contact_heading }}</h2>
+    <p>{{ P.contact_text }}</p>
+    <p class="boxed"><strong>{{ t.company.name }}</strong><br>{{ t.company.address }}<br>{{ t.ui.tel }} {{ site.tel_local if lang == "ja" else site.tel }} ({{ t.company.hours }})<br>{{ t.ui.email }} <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </div>
+</section>
+{% endblock %}

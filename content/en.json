@@ -1,0 +1,985 @@
+{
+  "meta": {
+    "site_name": "Grande Shokai Co., Ltd.",
+    "pages": {
+      "home": {
+        "title": "Grande Shokai Co., Ltd. | Natural food ingredients, imported for Japan",
+        "description": "Grande Shokai imports and wholesales natural, raw and non-GMO food ingredients — gum arabic, sesame, hibiscus, baobab, Deglet Nour dates and more — for Japanese manufacturers, hotels, retailers and food service."
+      },
+      "about": {
+        "title": "About us | Grande Shokai Co., Ltd.",
+        "description": "Company profile, core values and the global network of Grande Shokai Co., Ltd., a food ingredient importer based in Kawasaki, Japan."
+      },
+      "wholesale": {
+        "title": "Bulk wholesale ingredients | Grande Shokai Co., Ltd.",
+        "description": "Bulk gum arabic, sesame, hibiscus, senna, baobab, Deglet Nour dates, date syrup, beeswax, grains, pasta and olive oil — with specifications."
+      },
+      "retail": {
+        "title": "Retail products & brands | Grande Shokai Co., Ltd.",
+        "description": "Retail brands from Tunisia, Russia, Spain and India: MAKFA, El Khabia, Aoula, Papillon, Kartago, Jouda, All Naturals and Delicemed."
+      },
+      "consulting": {
+        "title": "Global consulting | Grande Shokai Co., Ltd.",
+        "description": "Japan market development for overseas companies and international expansion support for Japanese companies."
+      },
+      "contact": {
+        "title": "Contact | Grande Shokai Co., Ltd.",
+        "description": "Contact Grande Shokai about wholesale ingredients, retail distribution, becoming a supplier, or global consulting."
+      },
+      "privacy": {
+        "title": "Privacy policy | Grande Shokai Co., Ltd.",
+        "description": "How Grande Shokai Co., Ltd. handles personal information."
+      }
+    }
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "wholesale": "Wholesale",
+      "retail": "Retail",
+      "consulting": "Consulting",
+      "contact": "Contact",
+      "privacy": "Privacy policy"
+    },
+    "cta_contact": "Contact us",
+    "cta_quote": "Request a quote",
+    "map": "Open map",
+    "back_top": "Back to top",
+    "footer_tagline": "Your worldwide product — natural ingredients from the source to Japan's kitchens and factories.",
+    "footer_company": "Company",
+    "footer_explore": "Explore",
+    "rights": "All rights reserved.",
+    "tel": "Tel",
+    "fax": "Fax",
+    "email": "Email",
+    "hours": "Hours",
+    "address": "Address",
+    "spec": "Specification",
+    "uses": "Applications",
+    "origin": "Origin",
+    "pack": "Packing"
+  },
+  "company": {
+    "name": "Grande Shokai Co., Ltd.",
+    "address": "Yokoyama Bldg. 103, 13-5 Ise-cho, Kawasaki-ku, Kawasaki-shi, Kanagawa 210-0805, Japan",
+    "hours": "Weekdays 9:00–17:30 (closed weekends and public holidays)"
+  },
+  "home": {
+    "eyebrow": "Import · Wholesale · Consulting — since 2016",
+    "heading": "Nature's ingredients, sourced at origin for Japan",
+    "lead": "Grande Shokai was born from the desire to create an alternative path to health. We import raw, natural and non-GMO ingredients from Africa, the Mediterranean and Eurasia, and supply them to Japan's manufacturers, hotels and retailers.",
+    "hero_alt": "Deglet Nour dates, nuts and mint tea on Tunisian tiles",
+    "ticker": [
+      "Gum Arabic",
+      "Sesame",
+      "Hibiscus",
+      "Baobab",
+      "Deglet Nour Dates",
+      "Date Syrup",
+      "Senna",
+      "Beeswax",
+      "Buckwheat",
+      "Durum Semolina",
+      "Olive Oil",
+      "Harissa",
+      "Tahini",
+      "Rose Water"
+    ],
+    "stats": [
+      {
+        "num": "2016",
+        "label": "Founded in Kawasaki"
+      },
+      {
+        "num": "13",
+        "label": "Countries in our network"
+      },
+      {
+        "num": "60+",
+        "label": "Ingredients and retail lines"
+      }
+    ],
+    "divisions_eyebrow": "Three divisions",
+    "divisions_heading": "One partner, from raw material to market entry",
+    "divisions": [
+      {
+        "slug": "wholesale",
+        "num": "01",
+        "title": "Bulk wholesale ingredients",
+        "text": "Gum arabic, sesame, hibiscus, baobab, dates, grains and more — for food processing, pharmaceutical and cosmetic manufacturers, bakeries, hotels and restaurants."
+      },
+      {
+        "slug": "retail",
+        "num": "02",
+        "title": "Retail products & brands",
+        "text": "Exclusive brands from Tunisia, Russia, Spain and India — pasta, spices, harissa, tahini, dates and flower waters — for supermarkets and specialty stores."
+      },
+      {
+        "slug": "consulting",
+        "num": "03",
+        "title": "Global consulting",
+        "text": "Market analysis, feasibility studies, partner search and project management for overseas companies entering Japan — and Japanese companies going global."
+      }
+    ],
+    "featured_eyebrow": "Signature ingredients",
+    "featured_heading": "Sourced where they grow best",
+    "featured": [
+      {
+        "img": "gum-arabic",
+        "id": "gum-arabic",
+        "title": "Gum Arabic Hashab HPS",
+        "origin": "Sudan"
+      },
+      {
+        "img": "hibiscus",
+        "id": "hibiscus",
+        "title": "Hibiscus Flower HPS",
+        "origin": "Sudan"
+      },
+      {
+        "img": "sesame",
+        "id": "sesame",
+        "title": "Sesame Seeds",
+        "origin": "Sudan"
+      },
+      {
+        "img": "baobab",
+        "id": "baobab",
+        "title": "Baobab Fruit",
+        "origin": "Sudan"
+      },
+      {
+        "img": "dates",
+        "id": "dates",
+        "title": "Deglet Nour Dates",
+        "origin": "Tunisia"
+      },
+      {
+        "img": "makfa",
+        "id": "makfa",
+        "title": "MAKFA Pasta & Grains",
+        "origin": "Russia"
+      }
+    ],
+    "customers_eyebrow": "Who we supply",
+    "customers_heading": "Trusted across the food chain",
+    "customers": [
+      "Wholesalers",
+      "Hotels & resorts",
+      "Airlines",
+      "Supermarkets & retailers",
+      "Bakeries",
+      "Fast-food chains",
+      "Food manufacturers",
+      "Pharmaceutical & cosmetic makers"
+    ],
+    "network_eyebrow": "Grande Shokai global network",
+    "network_heading": "Partners in 13 countries",
+    "network_lead": "Long-term relationships with growers, processors and brand owners let us offer reliable supply, consistent quality and fair prices.",
+    "shows_eyebrow": "Trade shows",
+    "shows_heading": "Meet us at Japan's leading food exhibitions",
+    "shows": [
+      {
+        "img": "foodex-2018",
+        "title": "FOODEX JAPAN 2018",
+        "text": "International Food and Beverage Exhibition · 6–9 March 2018 · Makuhari Messe"
+      },
+      {
+        "img": "smts-2019",
+        "title": "Supermarket Trade Show 2019",
+        "text": "53rd edition · 13–15 February 2019 · Makuhari Messe"
+      }
+    ],
+    "cta_heading": "Looking for a reliable ingredient partner?",
+    "cta_text": "Tell us what you need — product, volume, specification and delivery — and we will prepare a proposal.",
+    "cta_supplier": "Become a supplier"
+  },
+  "network": [
+    {
+      "country": "Japan",
+      "partners": [
+        "EMS International Trading Co., Ltd.",
+        "Delicemed"
+      ]
+    },
+    {
+      "country": "Tunisia",
+      "partners": [
+        "El Khabia",
+        "Aoula",
+        "Papillon",
+        "Jouda",
+        "Kartago"
+      ]
+    },
+    {
+      "country": "Sudan",
+      "partners": [
+        "Omer Mohamed for Import & Export"
+      ]
+    },
+    {
+      "country": "Russia",
+      "partners": [
+        "MAKFA"
+      ]
+    },
+    {
+      "country": "Belarus",
+      "partners": [
+        "Ekaterina A. Lebedeva",
+        "HoneyWay",
+        "Turov Dairy Industrial Complex",
+        "MIRAN JSC"
+      ]
+    },
+    {
+      "country": "Spain",
+      "partners": [
+        "Delicemed"
+      ]
+    },
+    {
+      "country": "India",
+      "partners": [
+        "All Naturals"
+      ]
+    },
+    {
+      "country": "United Arab Emirates",
+      "partners": [
+        "Mirai Trading"
+      ]
+    },
+    {
+      "country": "Saudi Arabia",
+      "partners": [
+        "Mirai Trading"
+      ]
+    },
+    {
+      "country": "Qatar",
+      "partners": [
+        "Mirai Trading"
+      ]
+    },
+    {
+      "country": "China",
+      "partners": [
+        "Feifan Pack"
+      ]
+    },
+    {
+      "country": "Singapore",
+      "partners": [
+        "Keita Pte. Ltd."
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "partners": [
+        "Keita Pte. Ltd."
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "heading": "Building bridges between growers and makers",
+    "lead": "We believe the secrets to health, energy and long life are found in nature, through diet and nutrition. Building on the wisdom of traditional and modern food cultures from around the world, we are proud to share nutrient-dense, raw, organic and non-GMO products with producers, manufacturers and end users in Japan.",
+    "story": [
+      "Since 2016, Grande Shokai has imported ingredients from Sudan, Tunisia, Russia, Belarus, Spain and beyond. Our aim is to be a one-stop supply solution — sesame, buckwheat, hibiscus, gum arabic, dairy, honey, dried fruit, nuts, seeds and spices from a single, dependable partner.",
+      "Today our customers include wholesalers, hotels and resorts, airlines, supermarkets and retailers, bakeries, fast-food chains and food manufacturers across Japan."
+    ],
+    "values_heading": "Core values",
+    "values": [
+      {
+        "title": "We listen, we care, we serve.",
+        "text": "Every relationship starts with understanding what our customers truly need."
+      },
+      {
+        "title": "We tell the truth.",
+        "text": "We stand by our word and take responsibility for our actions."
+      },
+      {
+        "title": "We innovate.",
+        "text": "We look for better ingredients, better processes and better ways to serve — and keep improving."
+      },
+      {
+        "title": "We pursue excellence.",
+        "text": "In everything we do, good is never good enough."
+      },
+      {
+        "title": "We build to last.",
+        "text": "Enduring relationships based on respect, responsiveness and trust."
+      }
+    ],
+    "profile_heading": "Company profile",
+    "profile": [
+      {
+        "k": "Company name",
+        "v": "Grande Shokai Co., Ltd. (グランデ商会株式会社)"
+      },
+      {
+        "k": "Founded",
+        "v": "2016"
+      },
+      {
+        "k": "Head office",
+        "v": "Yokoyama Bldg. 103, 13-5 Ise-cho, Kawasaki-ku, Kawasaki-shi, Kanagawa 210-0805, Japan"
+      },
+      {
+        "k": "Telephone",
+        "v": "+81-44-272-8577"
+      },
+      {
+        "k": "Fax",
+        "v": "+81-44-272-8759"
+      },
+      {
+        "k": "President",
+        "v": "Eri Sakuta"
+      },
+      {
+        "k": "CEO",
+        "v": "Abouda Mohamed Slim"
+      },
+      {
+        "k": "CFO",
+        "v": "Elamin Mohamed"
+      },
+      {
+        "k": "Capital",
+        "v": "¥7.5 million"
+      },
+      {
+        "k": "Business",
+        "v": "Import and wholesale of food ingredients, retail products and global consulting"
+      }
+    ],
+    "network_heading": "Our global network"
+  },
+  "wholesale": {
+    "eyebrow": "Bulk wholesale",
+    "heading": "Ingredients you can build a product on",
+    "lead": "We build bridges between food producers and ingredient suppliers — with extensive industry contacts, a commitment to finding the right ingredient and the ability to anticipate trends. Our business is built on a reliable supply of high-quality, safe ingredients.",
+    "catalogue_heading": "Wholesale catalogue",
+    "catalogue": [
+      {
+        "cat": "Gum",
+        "items": [
+          "Gum arabic"
+        ]
+      },
+      {
+        "cat": "Seed",
+        "items": [
+          "Sesame"
+        ]
+      },
+      {
+        "cat": "Plant",
+        "items": [
+          "Hibiscus",
+          "Senna"
+        ]
+      },
+      {
+        "cat": "Fruit",
+        "items": [
+          "Baobab",
+          "Deglet Nour dates"
+        ]
+      },
+      {
+        "cat": "Processed",
+        "items": [
+          "Beeswax",
+          "Date paste",
+          "Date powder",
+          "Date syrup"
+        ]
+      },
+      {
+        "cat": "Grain",
+        "items": [
+          "Buckwheat",
+          "Barley",
+          "Millet"
+        ]
+      },
+      {
+        "cat": "Flour & pasta",
+        "items": [
+          "Superior-grade wheat flour",
+          "Spaghetti",
+          "Penne",
+          "Fusilli",
+          "Short pasta"
+        ]
+      },
+      {
+        "cat": "Oil",
+        "items": [
+          "Pure olive oil",
+          "Extra virgin olive oil",
+          "Organic extra virgin olive oil"
+        ]
+      }
+    ],
+    "specs_heading": "Product specifications",
+    "specs_note": "Typical values for reference. Certificates of analysis and samples are available on request.",
+    "products": [
+      {
+        "id": "gum-arabic",
+        "img": "gum-arabic",
+        "name": "Gum Arabic Hashab HPS",
+        "origin": "Sudan",
+        "text": "A dried exudation from the stems and branches of Acacia senegal. Pale white to yellowish-orange, odourless and edible, it is valued worldwide as a natural emulsifier, stabiliser and binder.",
+        "uses": [
+          "Beverage emulsions and flavour encapsulation",
+          "Confectionery, glazes and bakery toppings",
+          "Wine and beer foam stabilisation",
+          "Dietary fibre in processed foods",
+          "Pharmaceutical binders, cosmetics and lithography"
+        ],
+        "spec": [
+          [
+            "Solubility in water",
+            "Soluble"
+          ],
+          [
+            "Moisture",
+            "15% max"
+          ],
+          [
+            "Optical rotation",
+            "−22 to −34"
+          ],
+          [
+            "Starch and dextrin",
+            "Nil"
+          ],
+          [
+            "Solubility in ethanol",
+            "Insoluble"
+          ]
+        ]
+      },
+      {
+        "id": "hibiscus",
+        "img": "hibiscus",
+        "name": "Hibiscus Flower HPS",
+        "origin": "Sudan",
+        "text": "Dried calyces of Hibiscus sabdariffa from the fields of Sudan — deep red, pleasantly aromatic and bittersweet. Naturally cultivated without chemical fertilisers, herbicides or pesticides, processed without additives, and carefully cleaned.",
+        "uses": [
+          "Hot and iced herbal infusions",
+          "Beverages and syrups",
+          "Natural colour for food"
+        ],
+        "pack": "PP bags, 50 kg",
+        "spec": [
+          [
+            "Moisture",
+            "10% max"
+          ],
+          [
+            "Ash",
+            "10% max"
+          ],
+          [
+            "Fibre",
+            "15% min"
+          ],
+          [
+            "Protein",
+            "5% max"
+          ],
+          [
+            "Total acids",
+            "25–30%"
+          ],
+          [
+            "pH",
+            "3.5"
+          ]
+        ]
+      },
+      {
+        "id": "sesame",
+        "img": "sesame",
+        "name": "Sesame Seeds",
+        "origin": "Sudan",
+        "text": "Sesamum indicum, cultivated for its oil-rich edible seeds. Naturally stable sesame oil stores well, and the seeds bring flavour and texture to breads, salads, biscuits and confectionery.",
+        "uses": [
+          "Oil pressing",
+          "Bakery and confectionery",
+          "Tahini and sesame paste"
+        ],
+        "spec": [
+          [
+            "Oil content",
+            "48% min"
+          ],
+          [
+            "Moisture",
+            "5% max"
+          ],
+          [
+            "Impurity",
+            "1% max"
+          ],
+          [
+            "Insect and water damage",
+            "Free"
+          ],
+          [
+            "FFA",
+            "3% max"
+          ]
+        ]
+      },
+      {
+        "id": "baobab",
+        "img": "baobab",
+        "name": "Baobab Fruit Pulp",
+        "origin": "Sudan",
+        "text": "From Adansonia digitata, the \"upside-down tree\", known in Sudan as tabaldi, whose fruit is called gongolez. The dry pulp has long been eaten as is or made into a popular juice; the seeds are pressed for oil.",
+        "uses": [
+          "Juices and smoothies",
+          "Powders and food ingredients",
+          "Snacks and confectionery"
+        ],
+        "spec": [
+          [
+            "Moisture",
+            "12% max"
+          ],
+          [
+            "Protein",
+            "2.04%"
+          ],
+          [
+            "Ash",
+            "5.5% max"
+          ],
+          [
+            "Foreign matter",
+            "0.2% max"
+          ],
+          [
+            "Yeasts and moulds",
+            "< 10,000 cfu/g"
+          ]
+        ]
+      },
+      {
+        "id": "dates",
+        "img": "dates",
+        "name": "Premium Deglet Nour Dates",
+        "origin": "Tunisia",
+        "text": "Golden, translucent and naturally sweet, Deglet Nour is prized among dates. Ours come from Tunisia's Djerid and Nefzaoua regions on the edge of the Sahara, are pitted and hand-selected piece by piece, with an impurity rate below 1% against a 3% industry standard. JAS, Halal and Kosher certified.",
+        "uses": [
+          "Granola and cereal toppings",
+          "Yogurt and desserts",
+          "Stuffed with nuts, cream or cheese"
+        ],
+        "spec": [
+          [
+            "Moisture",
+            "20.2 g/100 g"
+          ],
+          [
+            "Energy",
+            "296 kcal/100 g"
+          ],
+          [
+            "Protein",
+            "2.4 g/100 g"
+          ],
+          [
+            "Fat",
+            "0.2 g/100 g"
+          ],
+          [
+            "Dietary fibre",
+            "9.3 g/100 g"
+          ],
+          [
+            "Impurity",
+            "< 1%"
+          ]
+        ]
+      },
+      {
+        "id": "date-syrup",
+        "img": "dates",
+        "name": "Date Syrup",
+        "origin": "Tunisia",
+        "text": "Pressed from the finest Deglet Nour dates harvested for syrup. No added sugar, no preservatives and no water — 100% date juice with the fruit's own sweetness and flavour.",
+        "uses": [
+          "Pancakes, waffles, yogurt and ice cream",
+          "Smoothies, shakes and coffee",
+          "A replacement for sugar or honey in baking",
+          "Okonomiyaki sauce and shochu drinks"
+        ],
+        "spec": [
+          [
+            "Water activity",
+            "0.5–0.6"
+          ],
+          [
+            "pH",
+            "4.5"
+          ],
+          [
+            "Brix",
+            "70–75"
+          ],
+          [
+            "Energy",
+            "269 kcal/100 g"
+          ],
+          [
+            "Protein",
+            "2%"
+          ]
+        ]
+      },
+      {
+        "id": "senna",
+        "img": "senna",
+        "name": "Senna Pods",
+        "origin": "Sudan",
+        "text": "Cassia acutifolia, also known as Nubian, Alexandrian or Khartoum senna, from Sudan. The best grades show bright yellowish-green colour with a faint aroma. Supplied to pharmaceutical manufacturers; in Japan, senna leaves and pods are regulated as pharmaceutical ingredients.",
+        "uses": [
+          "Pharmaceutical manufacturing"
+        ],
+        "spec": [
+          [
+            "Water extract",
+            "25% min"
+          ],
+          [
+            "Ash",
+            "5% max"
+          ],
+          [
+            "Humidity",
+            "12%"
+          ],
+          [
+            "Impurity",
+            "1% max"
+          ]
+        ]
+      },
+      {
+        "id": "beeswax",
+        "img": "",
+        "name": "Beeswax",
+        "origin": "Africa / Eurasia",
+        "text": "The natural wax honeybees secrete to build their combs — yellow to brown, with a gentle honey aroma. A versatile raw material for cosmetics, candles, coatings and polishes.",
+        "uses": [
+          "Cosmetics and balms",
+          "Candles and wood polish",
+          "Food coatings",
+          "Pharmaceutical excipients"
+        ],
+        "spec": [
+          [
+            "Melting point",
+            "62–65 °C"
+          ],
+          [
+            "Specific gravity (20–25 °C)",
+            "0.950–0.960"
+          ],
+          [
+            "Refractive index (75 °C)",
+            "1.4398–1.4455"
+          ],
+          [
+            "Acid value",
+            "17–24"
+          ],
+          [
+            "Ester value",
+            "70–79"
+          ],
+          [
+            "Saponification value",
+            "88–102"
+          ],
+          [
+            "Ash",
+            "0.6% max"
+          ]
+        ]
+      }
+    ]
+  },
+  "retail": {
+    "eyebrow": "Retail products",
+    "heading": "Brands with a story, ready for the shelf",
+    "lead": "Our exclusive brands are guided by a spirit of innovation and an unwavering commitment to quality and value. We research, source and supply the purest products available — caring about every link, from the people who grow the ingredients to the shoppers who choose them.",
+    "brands_heading": "Our brands",
+    "brands": [
+      {
+        "name": "MAKFA",
+        "origin": "Russia",
+        "text": "Pasta, flour and grains from one of Russia's leading pasta makers."
+      },
+      {
+        "name": "El Khabia",
+        "origin": "Tunisia",
+        "text": "Tunisian food brand."
+      },
+      {
+        "name": "Aoula",
+        "origin": "Tunisia",
+        "text": "Pasta and couscous."
+      },
+      {
+        "name": "Papillon",
+        "origin": "Tunisia",
+        "text": "Halwa chamia — Tunisian sesame confections."
+      },
+      {
+        "name": "Kartago",
+        "origin": "Tunisia",
+        "text": "Tunisian food brand."
+      },
+      {
+        "name": "Jouda",
+        "origin": "Tunisia",
+        "text": "Tomato paste, harissa and grilled salad."
+      },
+      {
+        "name": "All Naturals",
+        "origin": "India",
+        "text": "Affordable wellness — spices and herbs."
+      },
+      {
+        "name": "Delicemed",
+        "origin": "Spain",
+        "text": "Les délices de la Méditerranée."
+      }
+    ],
+    "lines_heading": "Product lines",
+    "lines": [
+      {
+        "cat": "Grains & pasta",
+        "items": [
+          "MAKFA grains",
+          "Bulgur",
+          "All-purpose flour",
+          "Durum semolina (fine, medium)",
+          "MAKFA pasta",
+          "Pasta coude",
+          "Angel hair pasta"
+        ]
+      },
+      {
+        "cat": "Spices & herbs",
+        "items": [
+          "Coriander",
+          "Cumin",
+          "Turmeric",
+          "Chili",
+          "Oregano",
+          "Rosemary",
+          "Thyme",
+          "Basil",
+          "Fennel"
+        ]
+      },
+      {
+        "cat": "Spice blends",
+        "items": [
+          "Ras el hanout",
+          "Couscous spice",
+          "Chicken spice",
+          "Grill spice",
+          "Fish spice",
+          "Herbes de Provence",
+          "Sausage spice",
+          "BBQ spice"
+        ]
+      },
+      {
+        "cat": "Tomato & chili",
+        "items": [
+          "Double-concentrated tomato paste",
+          "Harissa (tube, jar, can)",
+          "Grilled salad"
+        ]
+      },
+      {
+        "cat": "Beans & cereals",
+        "items": [
+          "Chickpeas",
+          "Green lentils",
+          "Buckwheat cereal",
+          "Wheat cereal",
+          "5-grain cereal"
+        ]
+      },
+      {
+        "cat": "Dried fruit & nuts",
+        "items": [
+          "Premium Deglet Nour dates",
+          "Organic Deglet Nour dates",
+          "Premium tiger nuts",
+          "Organic tiger nuts"
+        ]
+      },
+      {
+        "cat": "Sesame & halwa",
+        "items": [
+          "Tahini",
+          "Chamia pistachio",
+          "Chamia almond",
+          "Chamia mixed fruit",
+          "Chamia light"
+        ]
+      },
+      {
+        "cat": "Flower waters & oils",
+        "items": [
+          "Rose water",
+          "Neroli water",
+          "Geranium water",
+          "Essential oils"
+        ]
+      }
+    ],
+    "distributor_heading": "Become a distributor",
+    "distributor_text": "Natural food and health stores, grocers, online retailers, restaurants, cafés and bakeries, manufacturers, caterers and gift shops — we would love to work with you. Ask for our catalogue and trade terms.",
+    "distributor_cta": "Apply as a distributor"
+  },
+  "consulting": {
+    "eyebrow": "Global consulting",
+    "heading": "Your partner across borders",
+    "lead": "We offer high-quality advisory and support services that help start-ups and small and mid-sized companies establish successful operations in new markets — delivering practical solutions for profitability and long-term sustainability.",
+    "japan_heading": "Japan market development",
+    "japan_text": "We help overseas companies open up the Japanese market and implement marketing strategies across high-growth and emerging sectors.",
+    "sectors": [
+      "Mechanical & electrical",
+      "Civil & marine",
+      "Automotive",
+      "ICT & telecommunications",
+      "Clean technology & renewables",
+      "Manufacturing",
+      "Medical & pharmaceutical",
+      "Cosmetics",
+      "Travel & tourism",
+      "Consumer goods"
+    ],
+    "services_heading": "Our services",
+    "services": [
+      "Market analysis",
+      "Feasibility studies",
+      "Due diligence",
+      "Business planning",
+      "Project management",
+      "HR recruitment",
+      "Business partnerships",
+      "Mergers & acquisitions",
+      "Business investment"
+    ],
+    "global_heading": "International expansion & globalisation",
+    "global_text": [
+      "We help Japanese companies expand internationally through our network across many countries and regions — from first market entry to tax and accounting compliance after entry, M&A and business advisory.",
+      "Our consultants tailor every engagement to the client's globalisation needs, taking local business practice and culture into account, backed by a qualified team of professional service providers."
+    ],
+    "partners_heading": "Consulting partners",
+    "partners": [
+      "AMM Recruitment",
+      "EM6 Holdings Inc.",
+      "Mirai Trading"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's talk ingredients",
+    "lead": "Wholesale enquiries, distribution, supplier proposals or consulting — write to us in Japanese or English.",
+    "direct_heading": "Contact details",
+    "form_heading": "Send an enquiry",
+    "form_note": "When you press the button, your email app opens with your enquiry ready to send. Nothing is stored on this website.",
+    "topic": "Enquiry type",
+    "topics": [
+      "Wholesale / quote",
+      "Retail products / become a distributor",
+      "Become a supplier",
+      "Global consulting",
+      "Other"
+    ],
+    "name": "Name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "product": "Product, volume and specification",
+    "message": "Message",
+    "required": "Required",
+    "submit": "Write the email",
+    "subject_prefix": "Enquiry",
+    "error": "Please fill in the required fields.",
+    "supplier_heading": "Becoming a supplier",
+    "supplier_text": "Long-term strategic supplier relationships bring innovations to market faster and better. We support our suppliers' continuous improvement — and expect the highest standards of quality, ethics and sustainability. Choose \"Become a supplier\" and include your company details and product information."
+  },
+  "privacy": {
+    "eyebrow": "Privacy policy",
+    "heading": "Privacy policy",
+    "intro": [
+      "Grande Shokai Co., Ltd. (\"we\") recognises the importance of personal information and complies with the Act on the Protection of Personal Information and related laws and guidelines."
+    ],
+    "sections": [
+      {
+        "title": "1. Purpose of use",
+        "body": [
+          "We use personal information only to the extent necessary for the following purposes:"
+        ],
+        "list": [
+          "Responding to enquiries and requests for quotes and samples",
+          "Carrying out transactions, shipping and invoicing",
+          "Providing information about our products and services"
+        ]
+      },
+      {
+        "title": "2. Provision to third parties",
+        "body": [
+          "We do not provide personal information to third parties without the individual's consent, except where permitted by law."
+        ]
+      },
+      {
+        "title": "3. Security",
+        "body": [
+          "We take necessary and appropriate measures to prevent leakage, loss or damage of personal information."
+        ]
+      },
+      {
+        "title": "4. Disclosure and correction",
+        "body": [
+          "If you request disclosure, correction or deletion of your personal information, we will respond promptly after confirming your identity."
+        ]
+      },
+      {
+        "title": "5. This website",
+        "body": [
+          "This website does not use cookies, analytics or advertising trackers. The contact form opens your own email app and does not send or store data on our server. Web fonts are loaded from Google Fonts, which receives your IP address as part of normal web requests."
+        ]
+      }
+    ],
+    "contact_heading": "Contact",
+    "contact_text": "For questions about our handling of personal information, please contact:"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "text": "The page you are looking for may have moved. Please choose a language to continue."
+  }
+}

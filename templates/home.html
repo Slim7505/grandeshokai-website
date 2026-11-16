@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set h = t.home %}
+<section class="hero">
+  <div class="hero-bg">{{ m.img("dates", h.hero_alt, "cover", "eager") }}</div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow eyebrow-light">{{ h.eyebrow }}</p>
+    <h1 class="display">{{ h.heading }}</h1>
+    <p class="lead">{{ h.lead }}</p>
+    <div class="actions">
+      <a class="btn btn-saffron" href="{{ path('wholesale') }}">{{ t.ui.nav.wholesale }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+      <a class="btn btn-line-light" href="{{ path('contact') }}">{{ t.ui.cta_quote }}</a>
+    </div>
+    <dl class="hero-stats">
+      {% for s in h.stats %}<div><dt>{{ s.label }}</dt><dd>{{ s.num }}</dd></div>{% endfor %}
+    </dl>
+  </div>
+</section>
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    {% for _ in range(2) %}{% for w in h.ticker %}<span>{{ w }}</span>{% endfor %}{% endfor %}
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow">{{ h.divisions_eyebrow }}</p>
+      <h2 class="h2">{{ h.divisions_heading }}</h2>
+    </header>
+    <ol class="divisions">
+      {% for d in h.divisions %}
+      <li class="division reveal">
+        <a href="{{ path(d.slug) }}">
+          <span class="division-num">{{ d.num }}</span>
+          <h3 class="h3">{{ d.title }}</h3>
+          <p>{{ d.text }}</p>
+          <span class="division-go">{{ m.icon("arrow-ne") }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section-sand">
+  <div class="wrap">
+    <header class="section-head section-head-row">
+      <div><p class="eyebrow">{{ h.featured_eyebrow }}</p><h2 class="h2">{{ h.featured_heading }}</h2></div>
+      <a class="link-arrow" href="{{ path('wholesale') }}">{{ t.ui.nav.wholesale }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+    </header>
+    <ul class="ingredients">
+      {% for f in h.featured %}
+      {% set pg = "retail" if f.id == "makfa" else "wholesale" %}
+      <li class="ingredient reveal">
+        <a href="{{ path(pg) }}{% if pg == 'wholesale' %}#{{ f.id }}{% endif %}">
+          <div class="ingredient-media">{{ m.img(f.img, "", "cover") }}</div>
+          <div class="ingredient-body"><h3 class="h4">{{ f.title }}</h3><span class="tag">{{ t.ui.origin }} · {{ f.origin }}</span></div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap customers-grid">
+    <div>
+      <p class="eyebrow">{{ h.customers_eyebrow }}</p>
+      <h2 class="h2">{{ h.customers_heading }}</h2>
+    </div>
+    <ul class="customers">{% for c in h.customers %}<li>{{ c }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="wrap">
+    <header class="section-head section-head-row">
+      <div><p class="eyebrow eyebrow-light">{{ h.network_eyebrow }}</p><h2 class="h2">{{ h.network_heading }}</h2></div>
+      <p class="lead-sm">{{ h.network_lead }}</p>
+    </header>
+    {% include "_network.html" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <header class="section-head"><p class="eyebrow">{{ h.shows_eyebrow }}</p><h2 class="h2">{{ h.shows_heading }}</h2></header>
+    <div class="shows">
+      {% for s in h.shows %}
+      <figure class="show reveal">{{ m.img(s.img, s.title, "cover") }}<figcaption><strong>{{ s.title }}</strong><span>{{ s.text }}</span></figcaption></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}

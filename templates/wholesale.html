@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block content %}
+{% set P = t.wholesale %}{% set head_img = "gum-arabic" %}
+{% include "_pagehead.html" %}
+<section class="section">
+  <div class="wrap">
+    <header class="section-head"><h2 class="h2">{{ P.catalogue_heading }}</h2></header>
+    <div class="catalogue">
+      {% for c in P.catalogue %}
+      <div class="cat reveal"><h3 class="cat-name">{{ c.cat }}</h3><ul>{% for i in c["items"] %}<li>{{ i }}</li>{% endfor %}</ul></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section section-sand">
+  <div class="wrap">
+    <header class="section-head section-head-row"><h2 class="h2">{{ P.specs_heading }}</h2><p class="lead-sm">{{ P.specs_note }}</p></header>
+    <nav class="chips" aria-label="{{ P.specs_heading }}">{% for p in P.products %}<a href="#{{ p.id }}">{{ p.name }}</a>{% endfor %}</nav>
+    <div class="sheets">
+      {% for p in P.products %}
+      <article class="sheet reveal" id="{{ p.id }}">
+        {% if p.img %}<div class="sheet-media">{{ m.img(p.img, p.name, "cover") }}<span class="tag tag-float">{{ t.ui.origin }} · {{ p.origin }}</span></div>{% endif %}
+        <div class="sheet-body">
+          <p class="sheet-code">GS-{{ "%02d"|format(loop.index) }}{% if not p.img %} · {{ t.ui.origin }} · {{ p.origin }}{% endif %}</p>
+          <h3 class="h3">{{ p.name }}</h3>
+          <p>{{ p.text }}</p>
+          <h4 class="sheet-h">{{ t.ui.uses }}</h4>
+          <ul class="dash">{% for u in p.uses %}<li>{{ u }}</li>{% endfor %}</ul>
+          {% if p.pack is defined %}<p class="sheet-pack"><strong>{{ t.ui.pack }}</strong> {{ p.pack }}</p>{% endif %}
+        </div>
+        <div class="sheet-spec">
+          <h4 class="sheet-h">{{ t.ui.spec }}</h4>
+          <dl class="spec">{% for r in p.spec %}<div><dt>{{ r[0] }}</dt><dd>{{ r[1] }}</dd></div>{% endfor %}</dl>
+          <a class="btn btn-dark btn-sm" href="{{ path('contact') }}?topic=0">{{ t.ui.cta_quote }} {{ m.icon("arrow", "ico ico-sm") }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_cta.html" %}
+{% endblock %}
